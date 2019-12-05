@@ -1,0 +1,194 @@
+/*
+* @Author: 徐嘉晖
+* @Date:   2019-11-26 11:52:54
+* @Last Modified by:   徐嘉晖
+* @Last Modified time: 2019-11-27 10:20:02
+*/
+*{
+	padding: 0;
+	margin: 0;
+}
+.advlong{
+	padding: 20px 0;
+}
+.topNav{
+	border-top: 1px solid #eee;
+	position: relative;
+}
+.topNav .container>ul {
+	width: 1450px;
+}
+.topNav .container>ul::after{
+	content: '';
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.topNav .container>ul li{
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 16px;
+	cursor: pointer;
+}
+.topNav .container>ul li a{
+	padding: 4px 12px;
+	text-decoration: none;
+	color: black;
+}
+.topNav .container>ul li:nth-child(1)>a{
+	color: orange;
+}
+.topNav .container>ul li:hover>a{
+	border-radius: 4px;
+	background-color: #eee;
+}
+.topNav .navhide{
+	display: none;
+	z-index: 11;
+	padding: 10px 0;
+	padding-bottom: 25px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	left: 0;
+	width: 100%;
+	position: absolute;
+	background-color: #fff;
+}
+.topNav .navhide .container{
+	line-height: 42px;
+}
+.topNav .navhide .labelnav{
+	width: 1401px;
+		height: 60px;
+}
+.topNav .navhide span{
+	color: #999;
+	padding: 4px 30px;
+}
+.topNav .navhide a:hover{
+	border-radius: 4px;
+	background-color: #eee;
+}
+.topNav .navhide label{
+	margin-right: 40px;
+	cursor: pointer;
+
+}
+.topNav .navhide input{
+	margin-right: 10px;
+}
+.topNav .navhide .buttonnav{
+	text-align: center;
+}
+.topNav .navhide .buttonnav button{
+	padding: 3px 50px;
+	background-color: #ffe300;
+	border-radius: 4px;
+	border: none;
+}
+
+
+
+/*content-footer*/
+.content-footer  .title{
+	overflow: hidden;
+	margin: 10px 0;
+}
+.content-footer .title span{
+	color: #999;
+}
+.content-footer .title a{
+	float: right;
+	text-decoration: none;
+	color: orange;
+}
+.content-footer .top .bookmark {
+	overflow: hidden;
+	width: 1450px;
+}
+.content-footer .top .bookmark li{
+	padding: 10px;
+	float: left;
+	margin-right: 20px;
+	background-color: #fff;
+	border-radius: 4px;
+}
+.content-footer .top .bookmark li .pic{
+	overflow: hidden;
+	width: 240px;
+	cursor: pointer;
+}
+.content-footer .top .bookmark li .pic:hover{
+	opacity: 0.8;
+}
+.content-footer .top .bookmark li .pic img{
+	width: 120px;
+	display: block;
+	float: left;
+}
+.content-footer .top .bookmark li a{
+	display: inline-block;
+	text-decoration: none;
+	margin: 10px 0;
+}
+.content-footer .top .bookmark li a:hover{
+	color: orange;
+}
+.content-footer .bottom .morefind{
+	overflow: hidden;
+	width: 1450px;
+}
+.content-footer .bottom .morefind li{
+	background-color: #fff;
+	border-radius: 4px;
+	margin-right: 20px;
+	float: left;
+	position: relative;
+}
+.content-footer .bottom .morefind li>span{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	font-size: 12px;
+	color: #fff;
+	height: 24px;
+	line-height: 24px;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 0px 10px;
+	border-radius: 4px 0 4px 0;
+	z-index: 11;
+}
+.content-footer .bottom .morefind li img{
+	width: 260px;
+	display: block;
+	border-radius: 4px 4px 0 0;
+	cursor: pointer;
+}
+.content-footer .bottom .morefind li img:hover{
+	opacity: 0.8;
+}
+.content-footer .bottom .morefind li>div{
+	padding: 10px;
+}
+.content-footer .bottom .morefind li .top{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 40px;
+}
+.content-footer .bottom .morefind li .top span{
+	color: #999;
+}
+.content-footer .bottom .morefind li .bottom{
+	overflow: hidden;
+	font-size: 12px;
+}
+.content-footer .bottom .morefind li .bottom a{
+	text-decoration: none;
+}
+.content-footer .bottom .morefind li .bottom a:hover{
+	color: orange;
+}
+.content-footer .bottom .morefind li .bottom span{
+	float: right;
+}

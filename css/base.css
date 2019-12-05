@@ -1,0 +1,498 @@
+/*
+* @Author: 徐嘉晖
+* @Date:   2019-11-25 10:42:46
+* @Last Modified by:   徐嘉晖
+* @Last Modified time: 2019-12-02 16:44:26
+*/
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.container{
+	width: 1380px;
+	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+body{
+	width: 100%;
+	height: 100%;
+	/* font-family: '微软雅黑'; */
+	transition: 1s;
+}
+ol,li{
+	list-style: none;
+}
+
+/* 侧边栏 */
+.content .slider{
+	display: none;
+	margin-top: 20px;
+	height: 50px;
+	width: 50px;
+	background-color: #ddd;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 40px;
+	right: 10%;
+	cursor: pointer;
+}
+.content .slider span{
+	line-height: 50px;
+	color: #fff;
+}
+.content .slider:hover span{
+	color: #999;
+}
+/* header样式 */
+.header{
+	width: 100%;
+	height: 56px;
+	background-color: #ffe300;
+}
+.header .nav{
+	margin: 0 70px;
+	height: 56px;
+	position: relative;
+	text-align: center;
+	z-index: 5;
+}
+.header .nav .logo{
+	position: absolute;
+	top: 18px;
+	left: 0;
+}
+.header .nav .logo img{
+	display: block;
+}
+.header .nav ul{
+	height: 56px;
+	position: absolute;
+	top: 50%;
+	margin-top: -28px;
+	margin-left: -326px;
+	left: 50%;
+	
+}
+.header .nav ul li{
+	float: left;
+	position: relative;
+}
+.header .nav ul li .icon{
+	background-color: #ea4335;
+	position: absolute;
+	color: #fff;
+	display: inline-block;
+	padding: 0 5px;
+	font-size: 12px;
+	height: 16px;
+	line-height: 16px;
+	top: 5px;
+}
+.header .nav ul li .icon::after{
+	content: '';
+	border: 4px solid transparent;
+	border-left-color: #ea4335;
+	position: absolute;
+	left: 0px;
+	top: 70%;
+}
+.header .nav ul li .more-icon{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background-color: #ea4335;
+	border-radius: 50%;
+	position: absolute;
+	top: 18px;
+	right: 16px;
+}
+.header .nav ul li a{
+	display: inline-block;
+	padding: 0 24px;
+	line-height: 56px;
+	text-decoration: none;
+}
+.header .nav ul li:nth-child(6) a{
+	padding: 0 36px;
+}
+.header .nav ul li:hover>a{
+	background-color: black;
+	color: #ffe300;
+}
+.header .nav ul li:nth-child(1) a{
+	font-weight: 600;
+}
+.header .nav ul li:nth-child(8)>a{
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+.header .nav .bar{
+	display: none;
+	position: absolute;
+	border-radius: 0 0 6px 6px;
+	background-color: #fff;
+	box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.2);
+	padding: 5px 0;
+}
+.header .nav .bar .top{
+	width: 650px;
+	overflow: hidden;
+	border-bottom: 1px solid #999;
+	padding: 0 10px 15px 10px;
+}
+.header .nav .bar .top div{
+	width: 90px;
+	height: 28px;
+	line-height: 28px;
+	position: relative;
+	text-align: center;
+	margin-top: 4px;
+	float: left;
+	font-size: 14px;
+	padding: 0 5px;
+}
+.header .nav .bar .top a{
+	padding: 0 10px;
+	display: inline-block;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 4px;
+}
+.header .nav .bar .top div>a:hover{
+	background-color: #ffe300;
+	color: black;
+}
+.header .nav .bar .top i{
+	display: inline-block;
+	width: 1px;
+	height: 14px;
+	background-color: #999;
+	position: absolute;
+	top: 25%;
+	right: 0px;
+}
+.header .nav .bottom{
+	overflow: hidden;
+	padding: 10px 10px 0 10px;
+}
+.header .nav .bottom a{
+	display: inline-block;
+	position: relative;
+	float: left;
+	line-height: 30px;
+	margin-right: 40px;
+}
+.header .nav .bottom a:hover{
+	color: orange;
+	background-color: #fff;
+}
+.header .nav .subBar a{
+	width: 150px;
+	text-align: left;
+}
+.header .nav .subBar a:hover{
+	color: black;
+	background-color: #ffe300;
+}
+
+.header .nav .subBar .more-icon{
+	right: 85px;
+}
+/* header中搜索 */
+.header .header-search{
+	position: absolute;
+	display: none;
+	left: 50%;
+	margin-left: -200px;
+}
+.header .header-search input{
+	height: 56px;
+	width: 470px;
+	background-color: transparent;
+	line-height: 50px;
+	font-size: 14px;
+	padding-left: 40px;
+	border: none;
+	outline: none;
+}
+.header .header-search span{
+	font-size: 25px;
+	cursor: pointer;
+}
+.header .header-search .icon-cross-fill{
+	position: absolute;
+	top: 10px;
+	left: 0px;
+}
+.header .header-search .icon-sousuo{
+	position: absolute;
+	top: 10px;
+	right: 0px;
+}
+.header .header-search .search-content{
+	background-color: #fff;
+	box-shadow:  0 1px 12px 0 rgba(0, 0, 0, 0.2);
+	text-align: left;
+}
+.header .header-search .search-content>div{
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+}
+.header .header-search .search-content .search-title{
+	font-size: 12px;
+	color: #bbb;
+}
+.header .header-search .search-content .search-a a{
+	text-decoration: none;
+	display: block;
+	color: black;
+}
+.header .header-search .search-content .search-a:hover{
+	background-color: #f2f2f2;
+}
+.header .login{
+	float: right;
+	margin-right: 40px;
+	height: 56px;
+	line-height: 56px;
+	position: relative;
+}
+.header .login a{
+	margin: 0 10px;
+	text-decoration: none;
+}
+.header .login span{
+	padding: 0 24px;
+	line-height: 56px;
+	font-size: 16px;
+	cursor: pointer;
+}
+.header .login span:hover{
+	background-color: black;
+	color: #ffe300;
+
+}
+.header .login i{
+	display: inline-block;
+	background-color: #999;
+	width: 1px;
+	height: 12px;
+	position: absolute;
+	top: 42%;
+	left: 185px;
+}
+
+
+/*footer样式 */
+.footerbase{
+	background-color: rgb(40, 40, 40);
+	color: #666666;
+	padding-bottom: 30px;
+}
+.footerbase a{
+	color: #666666;
+	font-size: 14px;
+}
+.footer-top{
+	overflow: hidden;
+	height: 130px;
+	line-height: 130px;
+	border-bottom: 1px solid #666666;
+}
+.footer-top .left{
+	float: left;
+}
+.footer-top .left a{
+	margin-right: 38px;
+}
+.footer-top .right{
+	float: right;
+}
+.footer-top .right span{
+	margin-left: 40px;
+	font-size: 25px;
+}
+.footer-top .right span:nth-child(1):hover{
+	color: #55b544;
+}
+.footer-top .right span:nth-child(2):hover{
+	color: #e10e23;
+}
+.footer-center{
+	margin-top: 20px;
+}
+.footer-center i{
+	margin: 0 53px;
+	display: inline-block;
+	width: 1px;
+	height: 12px;
+	background-color: #666666;
+}
+.footer-bottom{
+	margin-top: 10px;
+	overflow: hidden;
+}
+.footer-bottom i{
+	margin: 0 20px;
+	display: inline-block;
+	width: 1px;
+	height: 12px;
+	background-color: #666666;
+}
+.footer-bottom span{
+	float: right;
+}
+
+
+
+/* 登录模态框 */
+.login-box{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	z-index: 16;
+	display: none;
+}
+.login-box .box{
+	width: 400px;
+	height: 500px;
+	margin: 80px auto;
+	background-color: #fff;
+	border-radius: 3px;
+	padding: 30px;
+	position: relative;
+}
+.box .close-box{
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: -40px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	background-color: black;
+}
+.box .icon{
+	position: absolute;
+	cursor: pointer;
+	top: 10px;
+	right: 10px;
+}
+.box .login{
+	width: 340px;
+	height: 300px;
+}
+.box .login ul{
+	overflow: hidden;
+	border-bottom: 1px solid #eee;
+}
+.box .login ul li{
+	float: left;
+	list-style: none;
+	margin-right: 15px;
+	padding-bottom: 20px;
+	color: #999;
+	font-size: 16px;
+	font-weight: 500;
+}
+.box .login ul li:nth-child(1){
+	border-bottom: 2px solid black;
+}
+.box .login .count .emil input,.password input,.button input{
+	padding-left: 10px;
+	font-weight: 500;
+	font-family: '微软雅黑';
+	width: 330px;
+	height: 45px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	border: 1px solid #eee;
+}
+.box .login .count .emil{
+	margin-top: 40px;
+}
+.box .login .count .button {
+	width: 330px;
+	margin: 0px auto;
+}
+.box .login .count .button input{
+	cursor: pointer;
+	padding: 0px;
+	letter-spacing: 4px;
+}
+.box .login .count span{
+	font-size: 14px;
+	margin-left: 25px;
+	margin-right: 120px;
+	position: relative;
+}
+.box .login .count span::before{
+	content: '';
+	width: 15px;
+	height: 15px;
+	background-image: url('../images/checkboxed.svg');
+	position: absolute;
+	background-size: 100%;
+	left: -20px;
+	top: 2px;
+}
+.box .login .count a{
+	color: #999;
+	text-decoration: none;
+	padding-right: 10px;
+	font-size: 12px;
+}
+.box .login .count .forget{
+	border-right: 1px solid #999;
+}
+.box .login .count a:hover{
+	color: black;
+}
+.box .link{
+	margin: 0px auto;
+	text-align: center;
+}
+.box .link p{
+	text-align: center;
+	margin-top: 40px;
+	font-size: 14px;
+	color: #999;
+}
+.box .link a{
+	margin: 10px;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	border-radius: 50%;
+	background-image: url('../images/wechat.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #ccc;
+}
+.box .link a:nth-child(3){
+	background-image: url('../images/weibo.png');
+}
+.box .link a:nth-child(4){
+	background-image: url('../images/qq.png');
+}
+.box .link a:nth-child(2):hover{
+	background-color: #58bc46;
+}
+.box .link a:nth-child(3):hover{
+	background-color: #e90e24;
+}
+.box .link a:nth-child(4):hover{
+	background-color: #3caae3;
+}
+.box input[type="text"]:focus,.box input[type="password"]:focus,.box input[type="button"]:focus { 
+	outline: none;
+}

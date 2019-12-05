@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="icon" href="images/favicon.ico">
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			background-image: url('images/login-ground.jpg');
+			background-size:100%;
+			background-repeat: no-repeat;
+			font-family: '微软雅黑';
+		}
+		.box{
+			width: 340px;
+			height: 440px;
+			margin: 80px auto;
+			background-color: #fff;
+			border-radius: 3px;
+			padding: 30px;
+			position: relative;
+		}
+		.box .icon{
+			position: absolute;
+			cursor: pointer;
+			top: 10px;
+			right: 10px;
+		}
+		.box .login{
+			width: 340px;
+			height: 300px;
+		}
+		.box .login ul{
+			overflow: hidden;
+			border-bottom: 1px solid #eee;
+		}
+		.box .login ul li{
+			float: left;
+			list-style: none;
+			margin-right: 15px;
+			padding-bottom: 20px;
+			color: #999;
+			font-size: 16px;
+			font-weight: 500;
+		}
+		.box .login ul li:nth-child(1){
+			border-bottom: 2px solid black;
+		}
+		.box .login .count .emil input,.password input,.button input{
+			padding-left: 10px;
+			font-weight: 500;
+			font-family: '微软雅黑';
+			width: 330px;
+			height: 45px;
+			margin-bottom: 10px;
+			border-radius: 8px;
+			border: 1px solid #eee;
+		}
+		.box .login .count .emil{
+			margin-top: 40px;
+		}
+		.box .login .count .button {
+			width: 330px;
+			margin: 0px auto;
+		}
+		.box .login .count .button input{
+			cursor: pointer;
+			padding: 0px;
+			letter-spacing: 4px;
+		}
+		.box .login .count span{
+			font-size: 14px;
+			margin-left: 25px;
+			margin-right: 120px;
+			position: relative;
+		}
+		.box .login .count span::before{
+			content: '';
+			width: 15px;
+			height: 15px;
+			background-image: url('images/checkboxed.svg');
+			position: absolute;
+			background-size: 100%;
+			left: -20px;
+			top: 2px;
+		}
+		.box .login .count a{
+			color: #999;
+			text-decoration: none;
+			padding-right: 10px;
+			font-size: 12px;
+		}
+		.box .login .count .forget{
+			border-right: 1px solid #999;
+		}
+		.box .login .count a:hover{
+			color: black;
+		}
+
+
+
+		.box .link{
+			margin: 0px auto;
+			text-align: center;
+		}
+		.box .link p{
+			text-align: center;
+			margin-top: 40px;
+			font-size: 14px;
+			color: #999;
+		}
+		.box .link a{
+			margin: 10px;
+			width: 40px;
+			height: 40px;
+			display: inline-block;
+			border-radius: 50%;
+			background-image: url('images/wechat.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: #ccc;
+		}
+		.box .link a:nth-child(3){
+			background-image: url('images/weibo.png');
+		}
+		.box .link a:nth-child(4){
+			background-image: url('images/qq.png');
+		}
+		.box .link a:nth-child(2):hover{
+			background-color: #58bc46;
+		}
+		.box .link a:nth-child(3):hover{
+			background-color: #e90e24;
+		}
+		.box .link a:nth-child(4):hover{
+			background-color: #3caae3;
+		}
+		.box input[type="text"]:focus,.box input[type="password"]:focus,.box input[type="button"]:focus { 
+			outline: none;
+		 }
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="icon">
+			<img src="images/wx_l.svg" alt="">
+		</div>
+		<div class="login">
+			<ul>
+				<li>密码登陆</li>
+				<li>短信登陆</li>
+			</ul>
+			<div class="count">
+				<div class="emil">
+					<input type="text" placeholder="手机号/邮箱">
+				</div>
+				<div class="password">
+					<input type="password" placeholder="密码">
+				</div>
+				<div class="button">
+					<input type="button" value="登陆">
+				</div>
+				<div class="next">
+					<span>下次自动登陆</span>
+					<a href="#" class="forget">忘记密码</a>
+					<a href="#">注册</a>
+				</div>
+			</div>
+		</div>
+		<div class="link">
+			<p>第三方账号登陆</p>
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+		</div>
+	</div>
+</body>
+</html>

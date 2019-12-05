@@ -1,0 +1,334 @@
+/*
+* @Author: 徐嘉晖
+* @Date:   2019-11-25 15:46:20
+* @Last Modified by:   徐嘉晖
+* @Last Modified time: 2019-12-02 16:44:28
+*/
+
+/*banner样式*/
+.banner{
+	padding: 20px 0 35px 0;
+}
+.banner .top-banner{
+	overflow: hidden;
+	height: 350px;
+	position: relative;
+}
+.banner .top-banner ul{
+	width: 100000px;
+	height: 350px;
+	overflow: hidden;
+	margin-left: -1380px;
+}
+.banner .top-banner ul li{
+	float: left;
+}
+.banner .top-banner ul li img{
+	display: block;
+}
+.banner .top-banner ul .left,.top-banner ul .right{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #fff;
+	top: 50%;
+	text-align: center;
+	line-height: 50px;
+	margin-top: -10px;
+	cursor: pointer;
+	display: none;
+}
+.banner .top-banner ul .left{
+	left: 10px;
+}
+.banner .top-banner ul .right{
+	right: 10px;
+}
+.banner .top-banner ul:hover span{
+	display: block;
+}
+/*banner footer 样式*/
+
+.banner .footer-banner {
+	margin-top: 30px;
+	overflow: hidden;
+}
+.banner .footer-banner ul{
+	width: 10000px;
+}
+.banner .footer-banner a{
+	float: left;
+	margin-right: 20px;
+}
+.banner .footer-banner a img{
+	display: block;
+}
+
+/* subNav样式 */
+.subNav{
+	text-align: center;
+	height: 66px;
+	z-index: 11;
+	/* position: fixed; */
+	background-color: #fff;
+	width: 100%;
+}
+.subNav ul{
+	overflow: hidden;
+	margin: 0 auto;
+	display: inline-block;
+}
+.subNav ul li{
+	float: left;
+	margin: 0 20px;
+}
+.subNav ul li a{
+	display: inline-block;
+	padding: 20px 0;
+	text-decoration: none;
+	font-size: 18px;
+	color: #999;
+}
+.subNav ul li:nth-child(1) a{
+	border-bottom: 1px solid black;
+	color: black;
+}
+.subNav ul li a:hover{
+	border-bottom: 1px solid black;
+	color: black;
+}
+
+
+/* content样式 */
+
+.content{
+	background-color: #f4f4f4;
+	position: relative;
+}
+.content .container{
+	padding: 0;
+}
+
+
+
+.content .container>ul{
+	margin-top: 20px;
+	/* overflow: hidden; */
+	width: 1400px;
+}
+.content .container>ul::after{
+	content: '';
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.content .container>ul li{
+	float: left;
+	width: 260px;
+	margin: 0 20px 20px 0;
+	border-radius: 4px;
+	background-color: #fff;
+}
+.content .container>ul li img{
+	display: block;
+	border-radius: 4px 4px 0 0;
+	width: 100%;
+	cursor: pointer;
+}
+.content .container>ul li img:hover{
+	opacity: 0.8;
+}
+.content .container>ul li>div{
+	padding: 10px;
+}
+.content .container>ul li div p{
+	height: 20px;
+	line-height: 20px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.content .container>ul li div p a{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+	overflow: hidden;
+}
+.content .container>ul li div p:nth-child(2),.container>ul li div p:nth-child(3){
+	color: #999;
+}
+.content .container>ul li>div p span{
+	margin-right: 10px;
+}
+.content .container>ul li>div:nth-child(2){
+	border-bottom: 1px solid #999;
+}
+.content .container>ul li>div:nth-child(3){
+	/* overflow: hidden; */
+}
+
+.content .container>ul li>div .left>a{
+	line-height: 30px;
+}
+.content .container ul li div .left{
+	position: relative;
+}
+.content .container>ul li>div .left>a:hover{
+	color: orange;
+	text-decoration: none;
+}
+.content .container>ul li>div .left>a img{
+	width: 30px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 5px;
+}
+.content .container>ul li>div .right{
+	float: right;
+	line-height: 30px;
+}
+.content .container ul li div .left:hover .writer{
+	display: block;
+}
+.content .container .writer{
+	display: none;
+	bottom: 30px;
+	z-index: 11;
+	width: 360px;
+	padding: 20px;
+	position: absolute;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.content .container .writer::before{
+	content: '';
+	position: absolute;
+	border: 5px solid transparent;
+	border-top-color: #fff;
+	bottom: -10px;
+	left: 10px;
+}
+.content .container .writer .top{
+	overflow: hidden;
+	position: relative;
+}
+.content .container .writer .top img{
+	width: 40px;
+	border-radius: 50%;
+	float: left;
+}
+.content .container .writer .top a{
+	display: block;
+	padding: 0;
+	font-size: 13px;
+}
+.content .container .writer .top span{
+	color: #999;
+}
+.content .container .writer .top input{
+	position: absolute;
+	padding: 10px 20px 10px 20px;
+	background-color: rgb(255, 227, 0);
+	border: none;
+	right: 0px;
+	top: 0px;
+}
+.content .container .writer .top i{
+	background-image: url('../images/honor_tuijian_designer.svg');
+	display: inline-block;
+	background-size: 100% 100%;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 0px;
+	left: 30%;
+}
+.content .container .writer .center{
+	margin-top: 10px;
+	overflow: hidden;
+	width: 370px;
+}
+.content .container .writer .center img{
+	border-radius: 4px;
+	width: 100px;
+	margin-right: 10px;
+	float: left;
+}
+.content .container .writer .footer{
+	margin-top: 10px;
+}
+.content .container .writer .footer span{
+	color: #ccc;
+	margin-right: 10px;
+}
+.content .container .writer .footer span a{
+	color: #ccc;
+}
+.content .container .writer .footer span a:hover{
+	color: orange;
+	text-decoration: none;
+}
+.content .container .writer .footer i{
+	margin-right: 5px;
+}
+.content .container .pagenav{
+	text-align: center;
+}
+.content .container .pagenav ul li a{
+	margin: 0 5px;
+	color: #999;
+	border-radius: 4px;
+	padding: 13px 20px;
+}
+.content .container .pagenav ul li a:hover{
+	color: black;
+	background-color: rgb(255, 227, 0);
+}
+
+
+/* content-footer样式 */
+.content-footer>div{
+	overflow: hidden;
+	margin: 20px 0;
+}
+.content-footer>div .left{
+	color: #999;
+	font-size: 14px;
+	float: left
+}
+.content-footer>div .right{
+	cursor: pointer;
+	color: orange;
+	float: right;
+}
+.content-footer .advbanner ul{
+	width: 10000px;
+	margin-left: 0px;
+	overflow: hidden;
+}
+.content-footer .advbanner ul li{
+	float: left;
+	margin-right: 20px;
+	height: 196px;
+	background-color: #fff;
+	border-radius: 4px;
+}
+.content-footer .advbanner ul li img{
+	width: 260px;
+	display: block;
+}
+.content-footer .advbanner ul li img:hover{
+	opacity: 0.8;
+}
+.content-footer .advbanner ul li a{
+	display: inline-block;
+	margin: 10px 0;
+	text-indent: 1em;
+}
+.content-footer .advbanner ul li a:hover{
+	color: orange;
+	text-decoration: none;
+}

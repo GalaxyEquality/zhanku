@@ -1,0 +1,161 @@
+/*
+* @Author: 徐嘉晖
+* @Date:   2019-11-29 10:47:49
+* @Last Modified by:   徐嘉晖
+* @Last Modified time: 2019-11-29 17:14:35
+*/
+.subNav{
+	text-align: center;
+	height: 64px;
+	z-index: 11;
+	/* position: fixed; */
+	background-color: #fff;
+	width: 100%;
+}
+.subNav ul{
+	overflow: hidden;
+	margin: 0 auto;
+	display: inline-block;
+}
+.subNav ul li{
+	float: left;
+	margin: 0 20px;
+}
+.subNav ul li a{
+	display: inline-block;
+	padding: 20px 0;
+	text-decoration: none;
+	font-size: 16px;
+	color: #999;
+}
+.subNav ul li:nth-child(1) a{
+	border-bottom: 2px solid black;
+	color: black;
+}
+.subNav ul li a:hover{
+	border-bottom: 2px solid black;
+	color: black;
+}
+
+/* content */
+.content{
+	background-color: #f4f4f4;
+	padding: 20px 0 40px 0;
+}
+.content .container{
+	width: 1400px;
+	padding: 0;
+}
+.content .safe>ul{
+	overflow: hidden;
+}
+.content .safe>ul li{
+	width: 680px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: left;
+	background-color: #fff;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.content .safe>ul li img{
+	width: 100%;
+	cursor: pointer;
+}
+.content .safe>ul li img:hover{
+	opacity: 0.8;
+}
+.content .safe>ul li .content-ul-top{
+	padding: 20px;
+	border-bottom: 1px solid #eee;
+	position: relative;
+}
+.content .safe>ul li .content-ul-top h5 a{
+	font-size: 16px;
+	color: black;
+	text-decoration: none;
+}
+.content .safe>ul li .content-ul-top span{
+	margin-top: 14px;
+	color: #999;
+}
+.content .safe>ul li .content-ul-top .deadline{
+	float: right;
+	margin-top: 0;
+	color: #fff;
+	padding: 0 25px;
+	line-height: 32px;
+	position: absolute;
+	top: 20px;
+	right: 0;
+	background-color: #ffba00;
+}
+.content .safe>ul li .content-ul-top .deadline::before{
+	content: '';
+	position: absolute;
+	border: 16px solid transparent;
+	border-left-color: #fff;
+	left: 0px;
+}
+.content .safe>ul li .content-ul-bottom{
+	padding: 20px;
+	overflow: hidden;
+	font-size: 12px;
+	color: #999;
+}
+.content .safe>ul li .content-ul-bottom .left{
+	float: left;
+	line-height: 28px;
+}
+.content .safe>ul li .content-ul-bottom .right{
+	float: right;
+}
+.content .safe>ul li .content-ul-bottom .right span{
+	margin-right: 10px;
+}
+.content .safe>ul li .content-ul-bottom .right .icon-tupian{
+	font-size: 20px;
+	position: relative;
+	padding: 0 5px;
+}
+.content .safe>ul li .content-ul-bottom .right .icon-tupian::before{
+	position: absolute;
+	top: 0px;
+	left: -7px;
+}
+.content .safe .content-page{
+	width: 100%;
+}
+.content .safe .content-page ul{
+	width: 100%;
+	text-align: center;
+}
+.content .safe .content-page ul li{
+	width: 40px;
+	background-color: #fff;
+	color: #999;
+	border-radius: 4px;
+	text-align: center;
+	height: 40px;
+	margin-right: 5px;
+	line-height: 40px;
+	display: inline-block;
+	border: 1px solid #eee;
+	cursor: pointer;
+}
+.content .safe .content-page ul li:nth-child(1){
+	border-color: #ffe300;
+	color: black;
+	background-color: #ffe300; 
+}
+.content .safe .content-page ul li:hover{
+	border-color: #ffe300;
+	color: black;
+	background-color: #ffe300; 
+}
+.content .safe .content-page ul li:nth-child(8){
+	border-color: #eee;
+	color: #999;
+	background-color: #fff;
+	cursor: text; 
+}
